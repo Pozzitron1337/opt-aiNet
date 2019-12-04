@@ -24,7 +24,7 @@ def getDataSet_for_maximum(iterations):
     file = open("./maxValues.txt", 'r')
     lines = [line for line in file]
     file.close()
-    remove("./maxValues.txt")
+    #remove("./maxValues.txt")
     array = {}
     p=[0]*elements
     for i in range(elements):

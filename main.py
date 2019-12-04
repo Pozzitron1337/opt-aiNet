@@ -14,7 +14,6 @@ def getAllPoints (a,b):
     return xgrid, ygrid, zgrid
 
 def draw(a,b,iterations):
-    #iterations=[0,100,200,300,499]
     maximums=getDataSet_for_maximum(iterations)
     fig = pylab.figure()
     axes = Axes3D(fig)
@@ -37,8 +36,8 @@ def draw(a,b,iterations):
 
 
 def logic():
-    a = 5.15    #окіл значення для х
-    b = 5.15    #окіл значення для y
+    a = 2.3    #окіл значення для х
+    b = 2.3    #окіл значення для y
     ainet=AiNet(-a, a, -b, b)  #(x з -a до a) ТА (y з -b до b)
     ainet.max() #запуск алгоритму пошушу максимумів
     iterations = [0, 100, 200, 300, 499]    #Ітерації, на яких береться точки для зображення на малюнку
